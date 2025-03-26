@@ -85,9 +85,9 @@ Plecs {
     Index         "1"
   }
   Schematic {
-    Location      [635, 29; 1280, 756]
-    ZoomFactor    0.667277
-    SliderPosition [0, 0]
+    Location      [594, 30; 1536, 772]
+    ZoomFactor    1.14437
+    SliderPosition [52, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -158,7 +158,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "|++"
+        Value         "|+-"
         Show          off
       }
       Parameter {
@@ -184,7 +184,7 @@ Plecs {
       Frame         [-40, -25; 40, 25]
       Parameter {
         Variable      "cont_type"
-        Value         "5"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -488,7 +488,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "+++"
+        Value         "++-"
         Show          off
       }
       Parameter {
@@ -611,7 +611,7 @@ Plecs {
       Frame         [-40, -25; 40, 25]
       Parameter {
         Variable      "cont_type"
-        Value         "5"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -794,7 +794,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "|++"
+        Value         "|+-"
         Show          off
       }
       Parameter {
@@ -823,7 +823,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "|++"
+        Value         "|+-"
         Show          off
       }
       Parameter {
@@ -849,7 +849,7 @@ Plecs {
       Frame         [-40, -25; 40, 25]
       Parameter {
         Variable      "cont_type"
-        Value         "5"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -1008,7 +1008,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "+++"
+        Value         "++-"
         Show          off
       }
       Parameter {
@@ -1131,7 +1131,7 @@ Plecs {
       Frame         [-40, -25; 40, 25]
       Parameter {
         Variable      "cont_type"
-        Value         "5"
+        Value         "3"
         Show          off
       }
       Parameter {
@@ -1290,7 +1290,7 @@ Plecs {
       }
       Parameter {
         Variable      "Inputs"
-        Value         "|++"
+        Value         "|+-"
         Show          off
       }
       Parameter {
@@ -1498,40 +1498,6 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          TriangleGenerator
-      Name          "Triangular Wave"
-      Show          on
-      Position      [120, 535]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Min"
-        Value         "-0.5"
-        Show          off
-      }
-      Parameter {
-        Variable      "Max"
-        Value         "0.5"
-        Show          off
-      }
-      Parameter {
-        Variable      "f"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "DutyCycle"
-        Value         "0.5"
-        Show          off
-      }
-      Parameter {
-        Variable      "Delay"
-        Value         "0"
         Show          off
       }
     }
