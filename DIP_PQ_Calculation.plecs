@@ -1,5 +1,5 @@
 Plecs {
-  Name          "DIP_PLECS"
+  Name          "DIP_PQ_Calculation"
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
@@ -245,9 +245,9 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 0; 1136, 636]
+        Location      [448, 168; 1472, 701]
         ZoomFactor    1
-        SliderPosition [0, 0]
+        SliderPosition [0, 40]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -312,7 +312,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Width"
-            Value         "3"
+            Value         "2"
             Show          off
           }
         }
@@ -326,7 +326,7 @@ Plecs {
           LabelPosition south
           Parameter {
             Variable      "Width"
-            Value         "3"
+            Value         "2"
             Show          off
           }
         }
@@ -877,24 +877,6 @@ Plecs {
           }
         }
         Component {
-          Type          Ground
-          Name          "Ground"
-          Show          off
-          Position      [350, 565]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-        }
-        Component {
-          Type          Ground
-          Name          "Ground1"
-          Show          off
-          Position      [345, 320]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-        }
-        Component {
           Type          Output
           Name          "1"
           Show          on
@@ -1007,7 +989,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux"
           SrcTerminal   2
-          Points        [350, 235; 350, 225; 410, 225]
+          Points        [350, 240; 350, 225; 410, 225]
           Branch {
             Points        [410, 355]
             DstComponent  "Product2"
@@ -1073,7 +1055,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux"
           SrcTerminal   3
-          Points        [355, 245]
+          Points        [350, 250; 350, 245; 355, 245]
           Branch {
             Points        [355, 175]
             DstComponent  "Goto1"
@@ -1096,7 +1078,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux1"
           SrcTerminal   2
-          Points        [400, 365]
+          Points        [365, 370; 365, 365; 400, 365]
           Branch {
             Points        [400, 400]
             Branch {
@@ -1119,7 +1101,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Demux1"
           SrcTerminal   3
-          Points        [375, 375]
+          Points        [370, 380; 370, 375; 375, 375]
           Branch {
             Points        [375, 285]
             DstComponent  "Product"
@@ -1157,7 +1139,6 @@ Plecs {
           SrcTerminal   2
           Points        [830, 250]
           Branch {
-            Points        [830, 250; 850, 250]
             DstComponent  "1"
             DstTerminal   1
           }
@@ -1188,7 +1169,6 @@ Plecs {
           SrcTerminal   2
           Points        [835, 380]
           Branch {
-            Points        [835, 380; 850, 380]
             DstComponent  "2"
             DstTerminal   1
           }
@@ -1200,21 +1180,9 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Demux"
-          SrcTerminal   4
-          Points        [345, 255; 345, 310]
-        }
-        Connection {
-          Type          Signal
-          SrcComponent  "Demux1"
-          SrcTerminal   4
-          Points        [350, 385; 350, 555]
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "3"
           SrcTerminal   1
-          Points        [135, 435; 195, 435; 195, 350; 195, 350]
+          Points        [195, 435; 195, 350]
           Branch {
             Points        [230, 350; 230, 370]
             DstComponent  "3ph->RRF1"
@@ -1230,7 +1198,6 @@ Plecs {
           Type          Signal
           SrcComponent  "4"
           SrcTerminal   1
-          Points        [135, 380; 260, 380]
           DstComponent  "3ph->RRF1"
           DstTerminal   3
         }
@@ -1238,7 +1205,6 @@ Plecs {
           Type          Signal
           SrcComponent  "5"
           SrcTerminal   1
-          Points        [135, 250; 260, 250]
           DstComponent  "3ph->RRF"
           DstTerminal   3
         }
