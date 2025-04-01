@@ -85,9 +85,9 @@ Plecs {
     Index         "1"
   }
   Schematic {
-    Location      [594, 30; 1536, 772]
+    Location      [769, 30; 1535, 772]
     ZoomFactor    1.14437
-    SliderPosition [52, 0]
+    SliderPosition [513, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -1410,7 +1410,7 @@ Plecs {
       }
       Parameter {
         Variable      "pulsetype"
-        Value         "1"
+        Value         "6 "
         Show          off
       }
       Terminal {
@@ -1450,54 +1450,6 @@ Plecs {
       Parameter {
         Variable      "Width"
         Value         "-1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto"
-      Show          off
-      Position      [120, 55]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "Ud_ref"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto1"
-      Show          off
-      Position      [120, 295]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "Uq_ref"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
         Show          off
       }
     }
