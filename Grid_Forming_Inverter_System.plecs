@@ -4035,7 +4035,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [0, 23; 1536, 773]
+        Location      [0, 26; 1536, 776]
         ZoomFactor    1.30957
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -5125,7 +5125,7 @@ Plecs {
           SrcComponent  "Components/Control/Modulators/6-Pulse\\nGenerator"
           Name          "PWM Generator"
           Show          on
-          Position      [1045, 305]
+          Position      [1035, 305]
           Direction     up
           Flipped       off
           LabelPosition south
