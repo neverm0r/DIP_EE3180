@@ -54,10 +54,14 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
+  Terminal {
+    Type          Input
+    Index         "1"
+  }
   Schematic {
     Location      [0, 26; 1536, 776]
-    ZoomFactor    0.712216
-    SliderPosition [0, 0]
+    ZoomFactor    0.9327
+    SliderPosition [120, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -65,7 +69,7 @@ Plecs {
       SrcComponent  "Components/Control/Transformations/3ph->RRF"
       Name          "3ph->RRF"
       Show          on
-      Position      [165, 445]
+      Position      [165, 440]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -90,7 +94,7 @@ Plecs {
       Type          From
       Name          "From1"
       Show          off
-      Position      [100, 440]
+      Position      [100, 435]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -114,7 +118,7 @@ Plecs {
       Type          From
       Name          "From2"
       Show          off
-      Position      [100, 460]
+      Position      [100, 455]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -226,7 +230,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux1"
       Show          off
-      Position      [220, 445]
+      Position      [220, 440]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -281,66 +285,6 @@ Plecs {
       Parameter {
         Variable      "NoMatchingCounterpartAction"
         Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "Lg_u"
-      Show          on
-      Position      [1460, 190]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "L"
-        Value         "Lg"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "Lg_v"
-      Show          off
-      Position      [1460, 200]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "L"
-        Value         "Lg"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "Lg_w"
-      Show          off
-      Position      [1460, 210]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "L"
-        Value         "Lg"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
         Show          off
       }
     }
@@ -589,499 +533,6 @@ Plecs {
       }
     }
     Component {
-      Type          Subsystem
-      Name          "LCL_Filter"
-      Show          on
-      Position      [1300, 200]
-      Direction     up
-      Flipped       off
-      LabelPosition none
-      CommentOut    DisabledOpenCircuit
-      Frame         [-45, -20; 45, 20]
-      SampleTime    "-1"
-      CodeGenDiscretizationMethod "2"
-      CodeGenTarget "Generic"
-      MaskDisplayLang "2"
-      MaskIconFrame on
-      MaskIconOpaque off
-      MaskIconRotates on
-      Terminal {
-        Type          Port
-        Position      [50, -10]
-        Direction     right
-      }
-      Terminal {
-        Type          Port
-        Position      [50, 0]
-        Direction     right
-      }
-      Terminal {
-        Type          Port
-        Position      [50, 10]
-        Direction     right
-      }
-      Terminal {
-        Type          Port
-        Position      [-50, 10]
-        Direction     left
-      }
-      Terminal {
-        Type          Port
-        Position      [-50, 0]
-        Direction     left
-      }
-      Terminal {
-        Type          Port
-        Position      [-50, -10]
-        Direction     left
-      }
-      Schematic {
-        Location      [134, 110; 1100, 823]
-        ZoomFactor    1.71498
-        SliderPosition [25, 0]
-        ShowBrowser   off
-        BrowserWidth  100
-        Component {
-          Type          Inductor
-          Name          "Lf_u"
-          Show          on
-          Position      [305, 140]
-          Direction     left
-          Flipped       off
-          LabelPosition north
-          Parameter {
-            Variable      "L"
-            Value         "1m"
-            Show          off
-          }
-          Parameter {
-            Variable      "i_init"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Inductor
-          Name          "Lf_v"
-          Show          on
-          Position      [305, 180]
-          Direction     left
-          Flipped       off
-          LabelPosition north
-          Parameter {
-            Variable      "L"
-            Value         "1m"
-            Show          off
-          }
-          Parameter {
-            Variable      "i_init"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Inductor
-          Name          "Lf_w"
-          Show          on
-          Position      [305, 220]
-          Direction     left
-          Flipped       off
-          LabelPosition north
-          Parameter {
-            Variable      "L"
-            Value         "1m"
-            Show          off
-          }
-          Parameter {
-            Variable      "i_init"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Capacitor
-          Name          "Cf_a"
-          Show          off
-          Position      [385, 300]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-          Parameter {
-            Variable      "C"
-            Value         "80e-6"
-            Show          off
-          }
-          Parameter {
-            Variable      "v_init"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Capacitor
-          Name          "Cf_b"
-          Show          off
-          Position      [410, 300]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-          Parameter {
-            Variable      "C"
-            Value         "80e-6"
-            Show          off
-          }
-          Parameter {
-            Variable      "v_init"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Capacitor
-          Name          "Cf_c"
-          Show          off
-          Position      [435, 300]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-          Parameter {
-            Variable      "C"
-            Value         "80e-6"
-            Show          off
-          }
-          Parameter {
-            Variable      "v_init"
-            Value         "0"
-            Show          off
-          }
-        }
-        Component {
-          Type          Port
-          Name          "a"
-          Show          on
-          Position      [560, 140]
-          Direction     right
-          Flipped       on
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "1"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Port
-          Name          "b"
-          Show          on
-          Position      [560, 180]
-          Direction     right
-          Flipped       on
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "2"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Port
-          Name          "c"
-          Show          on
-          Position      [560, 220]
-          Direction     right
-          Flipped       on
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "3"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Port
-          Name          "C"
-          Show          on
-          Position      [245, 220]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "4"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Port
-          Name          "B"
-          Show          on
-          Position      [245, 180]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "5"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Port
-          Name          "A"
-          Show          on
-          Position      [245, 140]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "6"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
-        }
-        Component {
-          Type          Resistor
-          Name          "R1"
-          Show          off
-          Position      [385, 265]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-          Parameter {
-            Variable      "R"
-            Value         "1e-5"
-            Show          off
-          }
-        }
-        Component {
-          Type          Resistor
-          Name          "R2"
-          Show          off
-          Position      [410, 265]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-          Parameter {
-            Variable      "R"
-            Value         "1e-5"
-            Show          off
-          }
-        }
-        Component {
-          Type          Resistor
-          Name          "R3"
-          Show          off
-          Position      [435, 265]
-          Direction     up
-          Flipped       off
-          LabelPosition east
-          Parameter {
-            Variable      "R"
-            Value         "1e-5"
-            Show          off
-          }
-        }
-        Component {
-          Type          Ground
-          Name          "Ground1"
-          Show          off
-          Position      [345, 375]
-          Direction     right
-          Flipped       off
-          LabelPosition south
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "Cf_a"
-          SrcTerminal   2
-          Points        [385, 340; 410, 340]
-          Branch {
-            Points        [435, 340]
-            DstComponent  "Cf_c"
-            DstTerminal   2
-          }
-          Branch {
-            DstComponent  "Cf_b"
-            DstTerminal   2
-          }
-          Branch {
-            Points        [410, 375]
-            DstComponent  "Ground1"
-            DstTerminal   1
-          }
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "C"
-          SrcTerminal   1
-          DstComponent  "Lf_w"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "B"
-          SrcTerminal   1
-          DstComponent  "Lf_v"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "Lf_u"
-          SrcTerminal   1
-          DstComponent  "A"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "Lf_u"
-          SrcTerminal   2
-          Points        [385, 140]
-          Branch {
-            DstComponent  "a"
-            DstTerminal   1
-          }
-          Branch {
-            DstComponent  "R1"
-            DstTerminal   1
-          }
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "Lf_v"
-          SrcTerminal   2
-          Points        [410, 180]
-          Branch {
-            DstComponent  "b"
-            DstTerminal   1
-          }
-          Branch {
-            DstComponent  "R2"
-            DstTerminal   1
-          }
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "Lf_w"
-          SrcTerminal   2
-          Points        [435, 220]
-          Branch {
-            DstComponent  "c"
-            DstTerminal   1
-          }
-          Branch {
-            DstComponent  "R3"
-            DstTerminal   1
-          }
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "R1"
-          SrcTerminal   2
-          DstComponent  "Cf_a"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "R2"
-          SrcTerminal   2
-          DstComponent  "Cf_b"
-          DstTerminal   1
-        }
-        Connection {
-          Type          Wire
-          SrcComponent  "R3"
-          SrcTerminal   2
-          DstComponent  "Cf_c"
-          DstTerminal   1
-        }
-      }
-    }
-    Component {
-      Type          ThreePhaseMeter
-      Name          "3ph Meter9"
-      Show          off
-      Position      [1215, 200]
-      Direction     up
-      Flipped       off
-      LabelPosition southSoutheast
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "voltage"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          ThreePhaseMeter
-      Name          "3ph Meter10"
-      Show          off
-      Position      [1370, 200]
-      Direction     up
-      Flipped       off
-      LabelPosition southSoutheast
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "voltage"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto21"
-      Show          off
-      Position      [1240, 155]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "Tag"
-        Value         "ILabc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
       Type          Resistor
       Name          "R11"
       Show          off
@@ -1171,443 +622,6 @@ Plecs {
         Value         "0.01"
         Show          off
       }
-    }
-    Component {
-      Type          Ground
-      Name          "Ground5"
-      Show          off
-      Position      [1300, 270]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-    }
-    Component {
-      Type          Resistor
-      Name          "R7"
-      Show          off
-      Position      [1510, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "R"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "R8"
-      Show          off
-      Position      [1530, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "R"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "R9"
-      Show          off
-      Position      [1550, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "R"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
-      Type          Ground
-      Name          "Ground7"
-      Show          off
-      Position      [1530, 270]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-    }
-    Component {
-      Type          Goto
-      Name          "Goto6"
-      Show          off
-      Position      [1240, 135]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "Tag"
-        Value         "VLabc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto7"
-      Show          off
-      Position      [1395, 135]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "Tag"
-        Value         "Vabc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto8"
-      Show          off
-      Position      [1395, 155]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "Tag"
-        Value         "Iabc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          SignalDemux
-      Name          "Demux2"
-      Show          off
-      Position      [320, 155]
-      Direction     right
-      Flipped       on
-      LabelPosition south
-      Parameter {
-        Variable      "Width"
-        Value         "6"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From"
-      Show          off
-      Position      [265, 155]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "pwm"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto"
-      Show          off
-      Position      [340, 130]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "s1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto1"
-      Show          off
-      Position      [370, 140]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "s2"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto2"
-      Show          off
-      Position      [395, 150]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "s3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto3"
-      Show          off
-      Position      [425, 160]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "s4"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto9"
-      Show          off
-      Position      [395, 170]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "s5"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto10"
-      Show          off
-      Position      [365, 180]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "s6"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "Lg_u1"
-      Show          on
-      Position      [1655, 190]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "L"
-        Value         "Lg"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "Lg_v1"
-      Show          off
-      Position      [1655, 200]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "L"
-        Value         "Lg"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Inductor
-      Name          "Lg_w1"
-      Show          off
-      Position      [1655, 210]
-      Direction     left
-      Flipped       off
-      LabelPosition north
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "L"
-        Value         "Lg"
-        Show          off
-      }
-      Parameter {
-        Variable      "i_init"
-        Value         "0"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "R10"
-      Show          off
-      Position      [1705, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "R"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "R13"
-      Show          off
-      Position      [1725, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "R"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
-      Type          Resistor
-      Name          "R14"
-      Show          off
-      Position      [1745, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "R"
-        Value         "10"
-        Show          off
-      }
-    }
-    Component {
-      Type          Ground
-      Name          "Ground8"
-      Show          off
-      Position      [1725, 270]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      CommentOut    DisabledOpenCircuit
     }
     Component {
       Type          Subsystem
@@ -2284,7 +1298,7 @@ Plecs {
         }
         Component {
           Type          Output
-          Name          "1"
+          Name          "P"
           Show          on
           Position      [880, 250]
           Direction     right
@@ -2303,7 +1317,7 @@ Plecs {
         }
         Component {
           Type          Output
-          Name          "2"
+          Name          "Q"
           Show          on
           Position      [880, 380]
           Direction     right
@@ -2322,7 +1336,7 @@ Plecs {
         }
         Component {
           Type          Input
-          Name          "3"
+          Name          "wt"
           Show          on
           Position      [115, 435]
           Direction     right
@@ -2341,7 +1355,7 @@ Plecs {
         }
         Component {
           Type          Input
-          Name          "4"
+          Name          "Iabc"
           Show          on
           Position      [115, 380]
           Direction     right
@@ -2360,7 +1374,7 @@ Plecs {
         }
         Component {
           Type          Input
-          Name          "5"
+          Name          "Uabc"
           Show          on
           Position      [115, 250]
           Direction     right
@@ -2545,7 +1559,7 @@ Plecs {
           SrcTerminal   2
           Points        [830, 250]
           Branch {
-            DstComponent  "1"
+            DstComponent  "P"
             DstTerminal   1
           }
           Branch {
@@ -2575,7 +1589,7 @@ Plecs {
           SrcTerminal   2
           Points        [835, 380]
           Branch {
-            DstComponent  "2"
+            DstComponent  "Q"
             DstTerminal   1
           }
           Branch {
@@ -2586,7 +1600,7 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "3"
+          SrcComponent  "wt"
           SrcTerminal   1
           Points        [195, 435; 195, 350]
           Branch {
@@ -2602,14 +1616,14 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "4"
+          SrcComponent  "Iabc"
           SrcTerminal   1
           DstComponent  "3ph->RRF1"
           DstTerminal   3
         }
         Connection {
           Type          Signal
-          SrcComponent  "5"
+          SrcComponent  "Uabc"
           SrcTerminal   1
           DstComponent  "3ph->RRF"
           DstTerminal   3
@@ -2624,6 +1638,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition none
+      CommentOut    DisabledOpenCircuit
       Frame         [-65, -40; 65, 40]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -3179,7 +2194,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Location      [448, 168; 798, 422]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -3259,7 +2273,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Width"
         Value         "3"
@@ -3274,7 +2287,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Width"
         Value         "3"
@@ -3289,7 +2301,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Location      [448, 168; 798, 395]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -3391,7 +2402,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Location      [0, 0; 0, 0]
       State         ""
       SavedViews    ""
@@ -3485,7 +2495,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Vgabc"
@@ -3510,7 +2519,6 @@ Plecs {
       Direction     right
       Flipped       on
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Width"
         Value         "3"
@@ -3525,7 +2533,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Location      [0, 0; 0, 0]
       State         ""
       SavedViews    ""
@@ -3619,7 +2626,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "P"
@@ -3644,35 +2650,9 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Q"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From8"
-      Show          off
-      Position      [325, 690]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "Tag"
-        Value         "Vabc"
         Show          off
       }
       Parameter {
@@ -3694,7 +2674,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Iabc"
@@ -3719,7 +2698,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "wt"
@@ -3744,7 +2722,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Uout"
@@ -3769,7 +2746,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Location      [448, 168; 798, 422]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
@@ -3849,7 +2825,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Frame         [-25, -25; 25, 25]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -4934,7 +3909,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "P"
@@ -4959,7 +3933,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Q"
@@ -4984,7 +3957,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "wt"
@@ -5009,7 +3981,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Uout"
@@ -5084,8 +4055,8 @@ Plecs {
       }
       Schematic {
         Location      [448, 168; 1472, 701]
-        ZoomFactor    1
-        SliderPosition [39, 0]
+        ZoomFactor    0.873846
+        SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -6645,54 +5616,6 @@ Plecs {
     }
     Component {
       Type          From
-      Name          "From14"
-      Show          off
-      Position      [355, 450]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "Vabc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
-      Name          "From15"
-      Show          off
-      Position      [355, 480]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      Parameter {
-        Variable      "Tag"
-        Value         "Iabc"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          From
       Name          "From16"
       Show          off
       Position      [355, 510]
@@ -6771,6 +5694,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "P"
@@ -6795,6 +5719,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Q"
@@ -6891,6 +5816,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "wt"
@@ -6915,6 +5841,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Uout"
@@ -7119,30 +6046,6 @@ Plecs {
       Parameter {
         Variable      "voltage"
         Value         "1"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto18"
-      Show          off
-      Position      [875, 225]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Tag"
-        Value         "Upcc1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
         Show          off
       }
     }
@@ -7627,78 +6530,6 @@ Plecs {
       }
     }
     Component {
-      Type          Goto
-      Name          "Goto22"
-      Show          off
-      Position      [595, 230]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Tag"
-        Value         "Ioabc3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto23"
-      Show          off
-      Position      [735, 225]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Tag"
-        Value         "Upre3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
-      Name          "Goto24"
-      Show          off
-      Position      [755, 200]
-      Direction     up
-      Flipped       off
-      LabelPosition east
-      Parameter {
-        Variable      "Tag"
-        Value         "Ipcc3"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "2"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "3"
-        Show          off
-      }
-    }
-    Component {
       Type          Ground
       Name          "Ground"
       Show          off
@@ -7767,6 +6598,402 @@ Plecs {
       Flipped       off
       LabelPosition east
     }
+    Component {
+      Type          SignalDemux
+      Name          "Demux6"
+      Show          off
+      Position      [285, 150]
+      Direction     right
+      Flipped       on
+      LabelPosition south
+      Parameter {
+        Variable      "Width"
+        Value         "6"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto19"
+      Show          off
+      Position      [340, 125]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "s1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto20"
+      Show          off
+      Position      [340, 135]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "s2"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto25"
+      Show          off
+      Position      [340, 145]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "s3"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto26"
+      Show          off
+      Position      [340, 155]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "s4"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Reference
+      SrcComponent  "PLECSRTBoxLib/PWM Capture1"
+      Name          "PWM"
+      Show          on
+      Position      [220, 150]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Frame         [-25, -20; 25, 20]
+      Parameter {
+        Variable      "channel"
+        Value         "[0:5]"
+        Show          off
+      }
+      Parameter {
+        Variable      "polarity"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "inputType"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "Ts"
+        Value         "Ts_plant"
+        Show          off
+      }
+      Parameter {
+        Variable      "offlineBehavior"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "TargetPortIndices"
+        Value         "1"
+        Show          off
+      }
+      Terminal {
+        Type          Output
+        Position      [29, 0]
+        Direction     right
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto27"
+      Show          off
+      Position      [340, 165]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "s5"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto28"
+      Show          off
+      Position      [340, 175]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "s6"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "2"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "3"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From14"
+      Show          off
+      Position      [355, 480]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Iabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto"
+      Show          off
+      Position      [770, 215]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Tag"
+        Value         "Iabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto1"
+      Show          off
+      Position      [735, 215]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Tag"
+        Value         "Vabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From15"
+      Show          off
+      Position      [355, 450]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Vabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From32"
+      Show          off
+      Position      [325, 690]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Vabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto2"
+      Show          off
+      Position      [570, 235]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Tag"
+        Value         "VLabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto3"
+      Show          off
+      Position      [600, 225]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Tag"
+        Value         "ILabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto6"
+      Show          off
+      Position      [835, 215]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      Parameter {
+        Variable      "Tag"
+        Value         "Vgabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
     Connection {
       Type          Signal
       SrcComponent  "From1"
@@ -7778,7 +7005,7 @@ Plecs {
       Type          Signal
       SrcComponent  "From2"
       SrcTerminal   1
-      Points        [125, 460; 125, 450]
+      Points        [125, 455; 125, 445]
       DstComponent  "3ph->RRF"
       DstTerminal   3
     }
@@ -7870,55 +7097,6 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "3ph Meter9"
-      SrcTerminal   4
-      DstComponent  "LCL_Filter"
-      DstTerminal   6
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "3ph Meter9"
-      SrcTerminal   5
-      DstComponent  "LCL_Filter"
-      DstTerminal   5
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "3ph Meter9"
-      SrcTerminal   6
-      DstComponent  "LCL_Filter"
-      DstTerminal   4
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter9"
-      SrcTerminal   8
-      DstComponent  "Goto21"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "LCL_Filter"
-      SrcTerminal   1
-      DstComponent  "3ph Meter10"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "LCL_Filter"
-      SrcTerminal   2
-      DstComponent  "3ph Meter10"
-      DstTerminal   2
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "LCL_Filter"
-      SrcTerminal   3
-      DstComponent  "3ph Meter10"
-      DstTerminal   3
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "VSI3"
       SrcTerminal   4
       Points        [245, 210]
@@ -7976,215 +7154,6 @@ Plecs {
       DstTerminal   1
     }
     Connection {
-      Type          Wire
-      SrcComponent  "3ph Meter10"
-      SrcTerminal   9
-      Points        [1370, 250; 1300, 250]
-      Branch {
-        Points        [1215, 250]
-        DstComponent  "3ph Meter9"
-        DstTerminal   9
-      }
-      Branch {
-        DstComponent  "Ground5"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "R7"
-      SrcTerminal   2
-      Points        [1530, 250]
-      Branch {
-        DstComponent  "R8"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "R9"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "Ground7"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter9"
-      SrcTerminal   7
-      Points        [1210, 135]
-      DstComponent  "Goto6"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter10"
-      SrcTerminal   7
-      Points        [1365, 135]
-      DstComponent  "Goto7"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter10"
-      SrcTerminal   8
-      DstComponent  "Goto8"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From"
-      SrcTerminal   1
-      DstComponent  "Demux2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   2
-      DstComponent  "Goto"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   3
-      DstComponent  "Goto1"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   4
-      DstComponent  "Goto2"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   5
-      DstComponent  "Goto3"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   6
-      DstComponent  "Goto9"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "Demux2"
-      SrcTerminal   7
-      DstComponent  "Goto10"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Lg_u1"
-      SrcTerminal   2
-      Points        [1705, 190]
-      DstComponent  "R10"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Lg_v1"
-      SrcTerminal   2
-      Points        [1725, 200]
-      DstComponent  "R13"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Lg_w1"
-      SrcTerminal   2
-      DstComponent  "R14"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "R10"
-      SrcTerminal   2
-      Points        [1725, 250]
-      Branch {
-        DstComponent  "R13"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "R14"
-        DstTerminal   2
-      }
-      Branch {
-        DstComponent  "Ground8"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Lg_u"
-      SrcTerminal   2
-      Points        [1510, 190]
-      Branch {
-        DstComponent  "R7"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "Lg_u1"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Lg_v"
-      SrcTerminal   2
-      Points        [1530, 200]
-      Branch {
-        DstComponent  "R8"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "Lg_v1"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "Lg_w"
-      SrcTerminal   2
-      Points        [1550, 210]
-      Branch {
-        DstComponent  "R9"
-        DstTerminal   1
-      }
-      Branch {
-        DstComponent  "Lg_w1"
-        DstTerminal   1
-      }
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "3ph Meter10"
-      SrcTerminal   4
-      DstComponent  "Lg_u"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "3ph Meter10"
-      SrcTerminal   5
-      DstComponent  "Lg_v"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
-      SrcComponent  "3ph Meter10"
-      SrcTerminal   6
-      DstComponent  "Lg_w"
-      DstTerminal   1
-    }
-    Connection {
       Type          Signal
       SrcComponent  "From16"
       SrcTerminal   1
@@ -8194,14 +7163,14 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "From14"
+      SrcComponent  "From15"
       SrcTerminal   1
       DstComponent  "PQ Calculation"
       DstTerminal   5
     }
     Connection {
       Type          Signal
-      SrcComponent  "From15"
+      SrcComponent  "From14"
       SrcTerminal   1
       Points        [385, 480; 385, 460]
       DstComponent  "PQ Calculation"
@@ -8321,13 +7290,6 @@ Plecs {
       Points        [370, 635; 370, 625]
       DstComponent  "Scope"
       DstTerminal   2
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "From8"
-      SrcTerminal   1
-      DstComponent  "Demux3"
-      DstTerminal   1
     }
     Connection {
       Type          Signal
@@ -8461,13 +7423,6 @@ Plecs {
       DstTerminal   1
     }
     Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter4"
-      SrcTerminal   7
-      DstComponent  "Goto18"
-      DstTerminal   1
-    }
-    Connection {
       Type          Wire
       SrcComponent  "3ph Meter11"
       SrcTerminal   4
@@ -8487,13 +7442,6 @@ Plecs {
       SrcTerminal   6
       DstComponent  "LC_Filter2"
       DstTerminal   4
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter11"
-      SrcTerminal   8
-      DstComponent  "Goto22"
-      DstTerminal   1
     }
     Connection {
       Type          Wire
@@ -8519,16 +7467,9 @@ Plecs {
     Connection {
       Type          Signal
       SrcComponent  "3ph Meter12"
-      SrcTerminal   7
-      DstComponent  "Goto23"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Signal
-      SrcComponent  "3ph Meter12"
       SrcTerminal   8
-      Points        [745, 220]
-      DstComponent  "Goto24"
+      Points        [745, 235]
+      DstComponent  "Goto"
       DstTerminal   1
     }
     Connection {
@@ -8662,6 +7603,92 @@ Plecs {
       DstComponent  "3ph Meter11"
       DstTerminal   2
     }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   4
+      DstComponent  "Goto25"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   5
+      DstComponent  "Goto26"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   6
+      DstComponent  "Goto27"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   7
+      DstComponent  "Goto28"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "PWM"
+      SrcTerminal   1
+      DstComponent  "Demux6"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   2
+      DstComponent  "Goto19"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "Demux6"
+      SrcTerminal   3
+      DstComponent  "Goto20"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter11"
+      SrcTerminal   7
+      DstComponent  "Goto2"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From32"
+      SrcTerminal   1
+      DstComponent  "Demux3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter12"
+      SrcTerminal   7
+      DstComponent  "Goto1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter11"
+      SrcTerminal   8
+      Points        [600, 255]
+      DstComponent  "Goto3"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter4"
+      SrcTerminal   7
+      Points        [875, 250; 835, 250]
+      DstComponent  "Goto6"
+      DstTerminal   1
+    }
     RectangleAnnotation {
       Position     [870, 470]
       Width        440
@@ -8679,8 +7706,8 @@ Plecs {
       Position      [705, 405]
     } 
     RectangleAnnotation {
-      Position     [570, 235]
-      Width        1040
+      Position     [595, 235]
+      Width        1090
       Height       290
       CornerRadius 3
       Thickness    2
