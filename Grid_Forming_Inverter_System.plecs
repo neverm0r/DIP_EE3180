@@ -3,7 +3,7 @@ Plecs {
   Version       "4.9"
   CircuitModel  "ContStateSpace"
   StartTime     "0.0"
-  TimeSpan      "1.0"
+  TimeSpan      "30"
   Timeout       ""
   Solver        "auto"
   MaxStep       "1e-3"
@@ -60,8 +60,8 @@ Plecs {
   }
   Schematic {
     Location      [0, 23; 1536, 773]
-    ZoomFactor    0.815036
-    SliderPosition [0, 0]
+    ZoomFactor    0.9327
+    SliderPosition [37, 53]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -2176,11 +2176,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1536, 795]
+      Location      [0, 26; 1536, 849]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALpAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAMcAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2283,11 +2283,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 23; 1536, 795]
+      Location      [0, 26; 1536, 849]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALpAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAMcAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2384,11 +2384,19 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 0; 0, 0]
-      State         ""
-      SavedViews    ""
-      HeaderState   ""
-      PlotPalettes  ""
+      Location      [448, 168; 798, 579]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAV4AAAGAAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":233,\"Labels\":[],"
+"\"VisualIdxs\":[]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
+"AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+"=="
       Axes          "3"
       TimeRange     "0"
       ScrollingMode "1"
@@ -2515,11 +2523,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [448, 168; 798, 579]
+      Location      [0, 26; 1536, 807]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAV4AAAGAAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALyAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2736,11 +2744,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1536, 807]
+      Location      [613, 56; 1448, 873]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAALyAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAANDAAAAmfw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA0MAAABQAP///wAAA0MAAAJ5AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -6585,31 +6593,6 @@ Plecs {
     }
     Component {
       Type          Goto
-      Name          "Goto15"
-      Show          off
-      Position      [1040, 695]
-      Direction     right
-      Flipped       off
-      LabelPosition south
-      CommentOut    DisabledOpenCircuit
-      Parameter {
-        Variable      "Tag"
-        Value         "pwm"
-        Show          off
-      }
-      Parameter {
-        Variable      "Visibility"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "NoMatchingCounterpartAction"
-        Value         "2"
-        Show          off
-      }
-    }
-    Component {
-      Type          Goto
       Name          "Goto16"
       Show          off
       Position      [1005, 470]
@@ -6895,11 +6878,6 @@ Plecs {
         Position      [-45, -10]
         Direction     left
       }
-      Terminal {
-        Type          Port
-        Position      [-30, -25]
-        Direction     up
-      }
       Schematic {
         Location      [0, 26; 1536, 776]
         ZoomFactor    1.30957
@@ -7177,23 +7155,13 @@ Plecs {
           }
         }
         Component {
-          Type          Port
+          Type          Ground
           Name          "Ground"
-          Show          on
-          Position      [335, 375]
-          Direction     right
+          Show          off
+          Position      [410, 390]
+          Direction     up
           Flipped       off
-          LabelPosition south
-          Parameter {
-            Variable      "Index"
-            Value         "7"
-            Show          on
-          }
-          Parameter {
-            Variable      "Width"
-            Value         "-1"
-            Show          off
-          }
+          LabelPosition east
         }
         Connection {
           Type          Wire
@@ -7210,7 +7178,6 @@ Plecs {
             DstTerminal   2
           }
           Branch {
-            Points        [410, 375]
             DstComponent  "Ground"
             DstTerminal   1
           }
@@ -7337,15 +7304,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition east
-    }
-    Component {
-      Type          Ground
-      Name          "Ground1"
-      Show          off
-      Position      [640, 215]
-      Direction     down
-      Flipped       off
-      LabelPosition west
     }
     Component {
       Type          Resistor
@@ -7630,7 +7588,7 @@ Plecs {
       Type          Goto
       Name          "Goto"
       Show          off
-      Position      [770, 215]
+      Position      [760, 225]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -7775,7 +7733,7 @@ Plecs {
       Type          Goto
       Name          "Goto6"
       Show          off
-      Position      [835, 215]
+      Position      [860, 215]
       Direction     up
       Flipped       off
       LabelPosition east
@@ -8109,7 +8067,7 @@ Plecs {
       Type          From
       Name          "From34"
       Show          off
-      Position      [1135, 810]
+      Position      [1400, 730]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8202,6 +8160,31 @@ Plecs {
       CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Width"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto9"
+      Show          off
+      Position      [885, 225]
+      Direction     up
+      Flipped       off
+      LabelPosition east
+      CommentOut    DisabledOpenCircuit
+      Parameter {
+        Variable      "Tag"
+        Value         "Igabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
         Value         "2"
         Show          off
       }
@@ -8622,12 +8605,6 @@ Plecs {
       DstTerminal   1
     }
     Connection {
-      Type          Signal
-      Points        [975, 695]
-      DstComponent  "Goto15"
-      DstTerminal   1
-    }
-    Connection {
       Type          Wire
       SrcComponent  "3ph Meter11"
       SrcTerminal   4
@@ -8673,7 +8650,7 @@ Plecs {
       Type          Signal
       SrcComponent  "3ph Meter12"
       SrcTerminal   8
-      Points        [745, 235]
+      Points        [745, 245]
       DstComponent  "Goto"
       DstTerminal   1
     }
@@ -8782,13 +8759,6 @@ Plecs {
     }
     Connection {
       Type          Wire
-      SrcComponent  "LC_Filter2"
-      SrcTerminal   7
-      DstComponent  "Ground1"
-      DstTerminal   1
-    }
-    Connection {
-      Type          Wire
       SrcComponent  "3ph Meter11"
       SrcTerminal   1
       DstComponent  "VSI3"
@@ -8890,7 +8860,7 @@ Plecs {
       Type          Signal
       SrcComponent  "3ph Meter4"
       SrcTerminal   7
-      Points        [875, 250; 835, 250]
+      Points        [875, 250; 860, 250]
       DstComponent  "Goto6"
       DstTerminal   1
     }
@@ -9026,7 +8996,7 @@ Plecs {
       Type          Signal
       SrcComponent  "From34"
       SrcTerminal   1
-      Points        [1420, 810; 1420, 700]
+      Points        [1420, 730; 1420, 700]
       DstComponent  "3ph->RRF2"
       DstTerminal   3
     }
@@ -9058,6 +9028,13 @@ Plecs {
       SrcComponent  "3ph->RRF"
       SrcTerminal   2
       DstComponent  "Demux1"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "3ph Meter4"
+      SrcTerminal   8
+      DstComponent  "Goto9"
       DstTerminal   1
     }
     RectangleAnnotation {
