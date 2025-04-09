@@ -54,14 +54,10 @@ Plecs {
   AlgebraicLoopTolerance "1e-6"
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
-  Terminal {
-    Type          Input
-    Index         "1"
-  }
   Schematic {
-    Location      [8, 31; 1528, 765]
+    Location      [0, 23; 1536, 773]
     ZoomFactor    0.9327
-    SliderPosition [37, 53]
+    SliderPosition [36, 57]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -1600,13 +1596,12 @@ Plecs {
     }
     Component {
       Type          Subsystem
-      Name          "VSG Control"
+      Name          " Control"
       Show          on
       Position      [875, 480]
       Direction     up
       Flipped       off
       LabelPosition none
-      CommentOut    DisabledOpenCircuit
       Frame         [-65, -40; 65, 40]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -1636,7 +1631,7 @@ Plecs {
         Direction     left
       }
       Schematic {
-        Location      [754, 235; 1267, 620]
+        Location      [0, 26; 1536, 776]
         ZoomFactor    1
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -2430,11 +2425,11 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [0, 26; 1536, 816]
+      Location      [769, 30; 1535, 794]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABgAAAAL7AAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAv4AAALhAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2447,7 +2442,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -2730,6 +2725,7 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Frame         [-25, -25; 25, 25]
       SampleTime    "-1"
       CodeGenDiscretizationMethod "2"
@@ -3810,10 +3806,11 @@ Plecs {
       Type          From
       Name          "From12"
       Show          off
-      Position      [115, 645]
+      Position      [115, 655]
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "P"
@@ -3838,6 +3835,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Q"
@@ -3862,6 +3860,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "wt"
@@ -3886,6 +3885,7 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
+      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Uout"
@@ -6409,11 +6409,10 @@ Plecs {
       Type          From
       Name          "From17"
       Show          off
-      Position      [715, 465]
+      Position      [715, 480]
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "P"
@@ -6438,7 +6437,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Q"
@@ -6511,7 +6509,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "wt"
@@ -6536,7 +6533,6 @@ Plecs {
       Direction     right
       Flipped       off
       LabelPosition south
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Uout"
@@ -7376,52 +7372,6 @@ Plecs {
         Variable      "NoMatchingCounterpartAction"
         Value         "3"
         Show          off
-      }
-    }
-    Component {
-      Type          Reference
-      SrcComponent  "PLECSRTBoxLib/PWM Capture1"
-      Name          "PWM"
-      Show          on
-      Position      [285, 140]
-      Direction     up
-      Flipped       off
-      LabelPosition south
-      Frame         [-25, -20; 25, 20]
-      Parameter {
-        Variable      "channel"
-        Value         "[0:5]"
-        Show          off
-      }
-      Parameter {
-        Variable      "polarity"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "inputType"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "Ts"
-        Value         "Ts_plant"
-        Show          off
-      }
-      Parameter {
-        Variable      "offlineBehavior"
-        Value         "1"
-        Show          off
-      }
-      Parameter {
-        Variable      "TargetPortIndices"
-        Value         "1"
-        Show          off
-      }
-      Terminal {
-        Type          Output
-        Position      [29, 0]
-        Direction     right
       }
     }
     Component {
@@ -8355,7 +8305,7 @@ Plecs {
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":234,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
@@ -8363,7 +8313,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "0"
+      Open          "1"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -8416,6 +8366,54 @@ Plecs {
           KeepBaseline  off
           BaselineValue 0
         }
+      }
+    }
+    Component {
+      Type          Goto
+      Name          "Goto10"
+      Show          off
+      Position      [1015, 630]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "gates"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "2"
+        Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From36"
+      Show          off
+      Position      [290, 140]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "gates"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
       }
     }
     Connection {
@@ -8598,13 +8596,12 @@ Plecs {
       Type          Signal
       SrcComponent  "From17"
       SrcTerminal   1
-      Points        [760, 465; 760, 480]
-      DstComponent  "VSG Control"
+      DstComponent  " Control"
       DstTerminal   4
     }
     Connection {
       Type          Signal
-      SrcComponent  "VSG Control"
+      SrcComponent  " Control"
       SrcTerminal   1
       DstComponent  "Goto16"
       DstTerminal   1
@@ -8613,12 +8610,12 @@ Plecs {
       Type          Signal
       SrcComponent  "From18"
       SrcTerminal   1
-      DstComponent  "VSG Control"
+      DstComponent  " Control"
       DstTerminal   3
     }
     Connection {
       Type          Signal
-      SrcComponent  "VSG Control"
+      SrcComponent  " Control"
       SrcTerminal   2
       Points        [955, 480; 955, 490]
       DstComponent  "Goto17"
@@ -8735,7 +8732,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From12"
       SrcTerminal   1
-      Points        [135, 645; 135, 655]
       DstComponent  "Droop Controller"
       DstTerminal   3
     }
@@ -9037,7 +9033,7 @@ Plecs {
     }
     Connection {
       Type          Signal
-      SrcComponent  "PWM"
+      SrcComponent  "From36"
       SrcTerminal   1
       DstComponent  "Demux6"
       DstTerminal   1
@@ -9297,6 +9293,13 @@ Plecs {
       DstComponent  "Scope6"
       DstTerminal   2
     }
+    Connection {
+      Type          Signal
+      SrcComponent  "Sub"
+      SrcTerminal   8
+      DstComponent  "Goto10"
+      DstTerminal   1
+    }
     RectangleAnnotation {
       Position     [895, 470]
       Width        490
@@ -9309,8 +9312,8 @@ Plecs {
       BrushAlpha   0
     } 
     Annotation {
-      Name          "<html><body>\n<p><span style=\" font-size:15px;\">VSG Con"
-"trol</span></p></body></html>"
+      Name          "<html><body>\n<p><span style=\" font-size:15px;\">Control"
+"</span></p></body></html>"
       Position      [705, 405]
     } 
     RectangleAnnotation {
