@@ -3959,7 +3959,7 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [1, 30; 767, 772]
+        Location      [1, 30; 1167, 772]
         ZoomFactor    0.873843
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -5954,21 +5954,9 @@ Plecs {
               }
             }
             Annotation {
-              Name          "<html><body>\n<p><span style=\" font-size:9px;\">"
-"no direct equivalent of repeating sequence in PLECS, </span></p>\n<p><span st"
-"yle=\" font-size:9px;\">might need to change the wave generated. </span></p><"
-"/body></html>"
-              Position      [430, 475]
-            } 
-            Annotation {
-              Name          "<html><body>\n<p><span style=\" font-size:9px;\">"
-"multiplication in matrix form</span> </p></body></html>"
-              Position      [475, 80]
-            } 
-            Annotation {
               Name          "<html><body>\n<p>For reference: </p>\n<p>f = 10k "
 "Hz</p></body></html>"
-              Position      [140, 310]
+              Position      [865, 515]
             } 
           }
         }
