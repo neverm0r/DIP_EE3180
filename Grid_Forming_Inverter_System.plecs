@@ -56,8 +56,8 @@ Plecs {
   ScriptsDialogSplitterPos "0"
   Schematic {
     Location      [0, 23; 1536, 773]
-    ZoomFactor    0.9327
-    SliderPosition [36, 57]
+    ZoomFactor    0.815036
+    SliderPosition [0, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -2153,7 +2153,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux3"
       Show          off
-      Position      [360, 690]
+      Position      [355, 665]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -2167,7 +2167,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux4"
       Show          off
-      Position      [360, 770]
+      Position      [355, 745]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -2181,7 +2181,7 @@ Plecs {
       Type          Scope
       Name          "Scope1"
       Show          on
-      Position      [425, 690]
+      Position      [420, 665]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2282,7 +2282,7 @@ Plecs {
       Type          Scope
       Name          "Scope2"
       Show          on
-      Position      [425, 770]
+      Position      [420, 745]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -2383,7 +2383,7 @@ Plecs {
       Type          From
       Name          "From5"
       Show          off
-      Position      [500, 690]
+      Position      [500, 660]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2407,7 +2407,7 @@ Plecs {
       Type          SignalDemux
       Name          "Demux5"
       Show          off
-      Position      [545, 690]
+      Position      [545, 660]
       Direction     right
       Flipped       on
       LabelPosition south
@@ -2421,15 +2421,15 @@ Plecs {
       Type          Scope
       Name          "Scope3"
       Show          on
-      Position      [595, 690]
+      Position      [595, 660]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [769, 30; 1535, 794]
+      Location      [769, 30; 1535, 803]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAIYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
 "///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAAAAPw"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAv4AAALhAAAA"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAv4AAALqAAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
@@ -2442,7 +2442,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -2522,7 +2522,7 @@ Plecs {
       Type          From
       Name          "From6"
       Show          off
-      Position      [325, 615]
+      Position      [320, 590]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2546,7 +2546,7 @@ Plecs {
       Type          From
       Name          "From7"
       Show          off
-      Position      [325, 635]
+      Position      [320, 600]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2570,7 +2570,7 @@ Plecs {
       Type          From
       Name          "From9"
       Show          off
-      Position      [325, 770]
+      Position      [320, 745]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2594,7 +2594,7 @@ Plecs {
       Type          From
       Name          "From10"
       Show          off
-      Position      [500, 755]
+      Position      [500, 710]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2618,7 +2618,7 @@ Plecs {
       Type          From
       Name          "From11"
       Show          off
-      Position      [500, 775]
+      Position      [500, 720]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -2642,7 +2642,7 @@ Plecs {
       Type          Scope
       Name          "Scope4"
       Show          on
-      Position      [595, 760]
+      Position      [595, 715]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -3906,7 +3906,7 @@ Plecs {
       Type          Subsystem
       Name          "Sub"
       Show          on
-      Position      [910, 700]
+      Position      [885, 700]
       Direction     up
       Flipped       off
       LabelPosition none
@@ -3959,7 +3959,7 @@ Plecs {
         Direction     right
       }
       Schematic {
-        Location      [8, 31; 1528, 765]
+        Location      [1, 30; 767, 772]
         ZoomFactor    0.873843
         SliderPosition [0, 0]
         ShowBrowser   off
@@ -4020,7 +4020,7 @@ Plecs {
         Component {
           Type          Reference
           SrcComponent  "Components/Control/Discrete/Discrete PID\\nController"
-          Name          "Discrete PID\nController"
+          Name          "Discrete PI\nController"
           Show          on
           Position      [345, 165]
           Direction     up
@@ -4302,7 +4302,7 @@ Plecs {
         Component {
           Type          Reference
           SrcComponent  "Components/Control/Discrete/Discrete PID\\nController"
-          Name          "Discrete PID\nController1"
+          Name          "Discrete PI\nController1"
           Show          on
           Position      [345, 385]
           Direction     up
@@ -4540,7 +4540,7 @@ Plecs {
         Component {
           Type          Reference
           SrcComponent  "Components/Control/Discrete/Discrete PID\\nController"
-          Name          "Discrete PID\nController2"
+          Name          "Discrete PI\nController2"
           Show          on
           Position      [650, 165]
           Direction     up
@@ -4822,7 +4822,7 @@ Plecs {
         Component {
           Type          Reference
           SrcComponent  "Components/Control/Discrete/Discrete PID\\nController"
-          Name          "Discrete PID\nController3"
+          Name          "Discrete PI\nController3"
           Show          on
           Position      [650, 385]
           Direction     up
@@ -5048,7 +5048,7 @@ Plecs {
           Type          Input
           Name          "Iq"
           Show          on
-          Position      [405, 445]
+          Position      [415, 430]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -5067,7 +5067,7 @@ Plecs {
           Type          Input
           Name          "Vq"
           Show          on
-          Position      [150, 430]
+          Position      [120, 430]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -5143,7 +5143,7 @@ Plecs {
           Type          Input
           Name          "Vd"
           Show          on
-          Position      [150, 220]
+          Position      [115, 220]
           Direction     right
           Flipped       off
           LabelPosition south
@@ -6074,12 +6074,12 @@ Plecs {
           Type          Signal
           SrcComponent  "Sum"
           SrcTerminal   1
-          DstComponent  "Discrete PID\nController"
+          DstComponent  "Discrete PI\nController"
           DstTerminal   1
         }
         Connection {
           Type          Signal
-          SrcComponent  "Discrete PID\nController"
+          SrcComponent  "Discrete PI\nController"
           SrcTerminal   2
           DstComponent  "Sum1"
           DstTerminal   3
@@ -6102,7 +6102,7 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Discrete PID\nController1"
+          SrcComponent  "Discrete PI\nController1"
           SrcTerminal   2
           DstComponent  "Sum2"
           DstTerminal   3
@@ -6118,7 +6118,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Sum3"
           SrcTerminal   1
-          DstComponent  "Discrete PID\nController1"
+          DstComponent  "Discrete PI\nController1"
           DstTerminal   1
         }
         Connection {
@@ -6132,12 +6132,12 @@ Plecs {
           Type          Signal
           SrcComponent  "Sum4"
           SrcTerminal   1
-          DstComponent  "Discrete PID\nController2"
+          DstComponent  "Discrete PI\nController2"
           DstTerminal   1
         }
         Connection {
           Type          Signal
-          SrcComponent  "Discrete PID\nController2"
+          SrcComponent  "Discrete PI\nController2"
           SrcTerminal   2
           DstComponent  "Sum5"
           DstTerminal   3
@@ -6160,7 +6160,7 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "Discrete PID\nController3"
+          SrcComponent  "Discrete PI\nController3"
           SrcTerminal   2
           DstComponent  "Sum6"
           DstTerminal   3
@@ -6169,7 +6169,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Sum7"
           SrcTerminal   1
-          DstComponent  "Discrete PID\nController3"
+          DstComponent  "Discrete PI\nController3"
           DstTerminal   1
         }
         Connection {
@@ -6199,7 +6199,7 @@ Plecs {
           Type          Signal
           SrcComponent  "Iq"
           SrcTerminal   1
-          Points        [455, 445]
+          Points        [455, 430]
           DstComponent  "Sum2"
           DstTerminal   4
         }
@@ -6221,7 +6221,7 @@ Plecs {
             }
           }
           Branch {
-            Points        [190, 500; 760, 500]
+            Points        [190, 470; 760, 470]
             DstComponent  "Sum6"
             DstTerminal   4
           }
@@ -6337,7 +6337,7 @@ Plecs {
       Type          From
       Name          "From16"
       Show          off
-      Position      [355, 510]
+      Position      [355, 470]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6385,7 +6385,7 @@ Plecs {
       Type          Goto
       Name          "Goto14"
       Show          off
-      Position      [610, 475]
+      Position      [610, 460]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6457,7 +6457,7 @@ Plecs {
       Type          From
       Name          "From19"
       Show          off
-      Position      [755, 640]
+      Position      [730, 665]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6481,7 +6481,7 @@ Plecs {
       Type          From
       Name          "From20"
       Show          off
-      Position      [755, 665]
+      Position      [730, 675]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6529,7 +6529,7 @@ Plecs {
       Type          Goto
       Name          "Goto17"
       Show          off
-      Position      [1005, 490]
+      Position      [1005, 480]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6553,7 +6553,7 @@ Plecs {
       Type          From
       Name          "From21"
       Show          off
-      Position      [755, 685]
+      Position      [730, 685]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6577,7 +6577,7 @@ Plecs {
       Type          From
       Name          "From28"
       Show          off
-      Position      [755, 710]
+      Position      [730, 695]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6601,7 +6601,7 @@ Plecs {
       Type          From
       Name          "From29"
       Show          off
-      Position      [755, 735]
+      Position      [730, 705]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6625,7 +6625,7 @@ Plecs {
       Type          From
       Name          "From30"
       Show          off
-      Position      [755, 760]
+      Position      [730, 715]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6649,7 +6649,7 @@ Plecs {
       Type          From
       Name          "From31"
       Show          off
-      Position      [755, 785]
+      Position      [730, 725]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -6742,7 +6742,7 @@ Plecs {
     }
     Component {
       Type          Subsystem
-      Name          "LC_Filter2"
+      Name          "LC_Filter"
       Show          on
       Position      [750, 275]
       Direction     up
@@ -7426,7 +7426,7 @@ Plecs {
       Type          From
       Name          "From14"
       Show          off
-      Position      [355, 480]
+      Position      [355, 460]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -7522,7 +7522,7 @@ Plecs {
       Type          From
       Name          "From32"
       Show          off
-      Position      [325, 690]
+      Position      [320, 665]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8033,7 +8033,6 @@ Plecs {
       Direction     up
       Flipped       off
       LabelPosition east
-      CommentOut    DisabledOpenCircuit
       Parameter {
         Variable      "Tag"
         Value         "Igabc"
@@ -8109,7 +8108,7 @@ Plecs {
       Type          Scope
       Name          "Scope"
       Show          on
-      Position      [90, 230]
+      Position      [100, 225]
       Direction     left
       Flipped       off
       LabelPosition east
@@ -8166,19 +8165,19 @@ Plecs {
       Type          Scope
       Name          "Scope5"
       Show          on
-      Position      [425, 620]
+      Position      [420, 595]
       Direction     up
       Flipped       off
       LabelPosition south
-      Location      [613, 41; 1448, 864]
+      Location      [0, 26; 1536, 807]
       State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
 "G0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
-"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAANDAAAAc/w"
-"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAA0MAAABQAP///wAAA0MAAAKlAAAA"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAYAAAAAc/w"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAABgAAAABQAP///wAABgAAAAJ7AAAA"
 "BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
 "AAAAA=="
       SavedViews    "AAAAAgAAAAA="
-      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[],"
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":132,\"Labels\":[],"
 "\"VisualIdxs\":[]}"
       PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA"
 "AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
@@ -8245,7 +8244,7 @@ Plecs {
       Type          From
       Name          "From33"
       Show          off
-      Position      [500, 620]
+      Position      [500, 590]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8269,7 +8268,7 @@ Plecs {
       Type          From
       Name          "From35"
       Show          off
-      Position      [500, 640]
+      Position      [500, 600]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8293,7 +8292,7 @@ Plecs {
       Type          Scope
       Name          "Scope6"
       Show          on
-      Position      [600, 625]
+      Position      [600, 595]
       Direction     up
       Flipped       off
       LabelPosition south
@@ -8313,7 +8312,7 @@ Plecs {
       TimeRange     "0"
       ScrollingMode "1"
       SingleTimeAxis "1"
-      Open          "1"
+      Open          "0"
       Ts            "-1"
       SampleLimit   "0"
       XAxisLabel    "Time / s"
@@ -8372,7 +8371,7 @@ Plecs {
       Type          Goto
       Name          "Goto10"
       Show          off
-      Position      [1015, 630]
+      Position      [990, 630]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8396,7 +8395,7 @@ Plecs {
       Type          From
       Name          "From36"
       Show          off
-      Position      [290, 140]
+      Position      [300, 140]
       Direction     right
       Flipped       off
       LabelPosition south
@@ -8414,6 +8413,87 @@ Plecs {
         Variable      "NoMatchingCounterpartAction"
         Value         "1"
         Show          off
+      }
+    }
+    Component {
+      Type          From
+      Name          "From37"
+      Show          off
+      Position      [500, 775]
+      Direction     right
+      Flipped       off
+      LabelPosition south
+      Parameter {
+        Variable      "Tag"
+        Value         "Igabc"
+        Show          off
+      }
+      Parameter {
+        Variable      "Visibility"
+        Value         "1"
+        Show          off
+      }
+      Parameter {
+        Variable      "NoMatchingCounterpartAction"
+        Value         "1"
+        Show          off
+      }
+    }
+    Component {
+      Type          Scope
+      Name          "Scope7"
+      Show          on
+      Position      [595, 775]
+      Direction     up
+      Flipped       off
+      LabelPosition south
+      Location      [1, 30; 767, 803]
+      State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAbwBvA"
+"G0AQQByAGUAYQAAAAAA/////wAAADYA////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAAAA//"
+"///wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAL+AAAAYvw"
+"BAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQBAAAAAAAAAv4AAABQAP///wAAAv4AAAKEAAAA"
+"BAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAA"
+"AAAAA=="
+      SavedViews    "AAAAAgAAAAA="
+      HeaderState   "{\"DefaultSecSize\":0,\"FirstSecSize\":64,\"Labels\":[\"D"
+"elta\"],\"VisualIdxs\":[3]}"
+      PlotPalettes  "AAAAAQAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+      Axes          "1"
+      TimeRange     "0.0"
+      ScrollingMode "1"
+      SingleTimeAxis "1"
+      Open          "0"
+      Ts            "-1"
+      SampleLimit   "0"
+      XAxisLabel    "Time / s"
+      ShowLegend    "1"
+      Axis {
+        Name          ""
+        AutoScale     1
+        MinValue      0
+        MaxValue      1
+        Signals       {}
+        SignalTypes   [ ]
+        Untangle      0
+        KeepBaseline  off
+        BaselineValue 0
+      }
+      Fourier {
+        SingleXAxis       on
+        AxisLabel         "Frequency / Hz"
+        Scaling           0
+        PhaseDisplay      0
+        ShowFourierLegend off
+        Axis {
+          Name          ""
+          AutoScale     1
+          MinValue      0
+          MaxValue      1
+          Signals       {}
+          Untangle      0
+          KeepBaseline  off
+          BaselineValue 0
+        }
       }
     }
     Connection {
@@ -8573,7 +8653,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From16"
       SrcTerminal   1
-      Points        [395, 510; 395, 470]
       DstComponent  "PQ Calculation"
       DstTerminal   3
     }
@@ -8588,7 +8667,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From14"
       SrcTerminal   1
-      Points        [385, 480; 385, 460]
       DstComponent  "PQ Calculation"
       DstTerminal   4
     }
@@ -8617,7 +8695,6 @@ Plecs {
       Type          Signal
       SrcComponent  " Control"
       SrcTerminal   2
-      Points        [955, 480; 955, 490]
       DstComponent  "Goto17"
       DstTerminal   1
     }
@@ -8702,7 +8779,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From7"
       SrcTerminal   1
-      Points        [370, 635; 370, 625]
       DstComponent  "Scope5"
       DstTerminal   2
     }
@@ -8724,7 +8800,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From11"
       SrcTerminal   1
-      Points        [550, 775; 550, 765]
       DstComponent  "Scope4"
       DstTerminal   2
     }
@@ -8763,7 +8838,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From19"
       SrcTerminal   1
-      Points        [805, 640; 805, 665]
       DstComponent  "Sub"
       DstTerminal   7
     }
@@ -8771,7 +8845,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From31"
       SrcTerminal   1
-      Points        [815, 785; 815, 725]
       DstComponent  "Sub"
       DstTerminal   1
     }
@@ -8779,7 +8852,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From29"
       SrcTerminal   1
-      Points        [805, 735; 805, 705]
       DstComponent  "Sub"
       DstTerminal   3
     }
@@ -8794,7 +8866,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From20"
       SrcTerminal   1
-      Points        [800, 665; 800, 675]
       DstComponent  "Sub"
       DstTerminal   6
     }
@@ -8802,7 +8873,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From30"
       SrcTerminal   1
-      Points        [810, 760; 810, 715]
       DstComponent  "Sub"
       DstTerminal   2
     }
@@ -8810,7 +8880,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From28"
       SrcTerminal   1
-      Points        [800, 710; 800, 695]
       DstComponent  "Sub"
       DstTerminal   4
     }
@@ -8818,7 +8887,6 @@ Plecs {
       Type          Signal
       SrcComponent  "PQ Calculation"
       SrcTerminal   2
-      Points        [580, 460; 580, 475]
       DstComponent  "Goto14"
       DstTerminal   1
     }
@@ -8833,40 +8901,40 @@ Plecs {
       Type          Wire
       SrcComponent  "3ph Meter11"
       SrcTerminal   4
-      DstComponent  "LC_Filter2"
+      DstComponent  "LC_Filter"
       DstTerminal   6
     }
     Connection {
       Type          Wire
       SrcComponent  "3ph Meter11"
       SrcTerminal   5
-      DstComponent  "LC_Filter2"
+      DstComponent  "LC_Filter"
       DstTerminal   5
     }
     Connection {
       Type          Wire
       SrcComponent  "3ph Meter11"
       SrcTerminal   6
-      DstComponent  "LC_Filter2"
+      DstComponent  "LC_Filter"
       DstTerminal   4
     }
     Connection {
       Type          Wire
-      SrcComponent  "LC_Filter2"
+      SrcComponent  "LC_Filter"
       SrcTerminal   1
       DstComponent  "3ph Meter12"
       DstTerminal   1
     }
     Connection {
       Type          Wire
-      SrcComponent  "LC_Filter2"
+      SrcComponent  "LC_Filter"
       SrcTerminal   2
       DstComponent  "3ph Meter12"
       DstTerminal   2
     }
     Connection {
       Type          Wire
-      SrcComponent  "LC_Filter2"
+      SrcComponent  "LC_Filter"
       SrcTerminal   3
       DstComponent  "3ph Meter12"
       DstTerminal   3
@@ -9273,7 +9341,7 @@ Plecs {
         DstTerminal   3
       }
       Branch {
-        Points        [115, 280; 90, 280]
+        Points        [115, 280; 100, 280]
         DstComponent  "Scope"
         DstTerminal   1
       }
@@ -9289,7 +9357,6 @@ Plecs {
       Type          Signal
       SrcComponent  "From35"
       SrcTerminal   1
-      Points        [545, 640; 545, 630]
       DstComponent  "Scope6"
       DstTerminal   2
     }
@@ -9298,6 +9365,13 @@ Plecs {
       SrcComponent  "Sub"
       SrcTerminal   8
       DstComponent  "Goto10"
+      DstTerminal   1
+    }
+    Connection {
+      Type          Signal
+      SrcComponent  "From37"
+      SrcTerminal   1
+      DstComponent  "Scope7"
       DstTerminal   1
     }
     RectangleAnnotation {
@@ -9312,8 +9386,8 @@ Plecs {
       BrushAlpha   0
     } 
     Annotation {
-      Name          "<html><body>\n<p><span style=\" font-size:15px;\">Control"
-"</span></p></body></html>"
+      Name          "<html><body>\n<p><span style=\" font-size:15px;\"> VSG Co"
+"ntrol</span></p></body></html>"
       Position      [705, 405]
     } 
     RectangleAnnotation {
