@@ -638,7 +638,7 @@ Plecs {
       Schematic {
         Location      [448, 168; 1472, 701]
         ZoomFactor    1
-        SliderPosition [0, 40]
+        SliderPosition [0, 0]
         ShowBrowser   off
         BrowserWidth  100
         Component {
@@ -1044,11 +1044,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [0, 23; 1536, 795]
-          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAC6fwCAAAAA/sAAAAQAFoAb"
+          Location      [0, 26; 1536, 816]
+          State         "AAAA/wAAAAD9AAAAAgAAAAEAAAC0AAAC+/wCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwEAAA"
-"AwAAAC6QAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABUgAAALp"
+"AwAAAC+wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAABUgAAAL7"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1060,7 +1060,7 @@ Plecs {
           TimeRange     "0"
           ScrollingMode "1"
           SingleTimeAxis "1"
-          Open          "0"
+          Open          "1"
           Ts            "-1"
           SampleLimit   "0"
           XAxisLabel    "Time / s"
@@ -1123,11 +1123,11 @@ Plecs {
           Direction     up
           Flipped       off
           LabelPosition south
-          Location      [448, 168; 798, 422]
+          Location      [448, 168; 798, 440]
           State         "AAAA/wAAAAD9AAAAAgAAAAEAAAAAAAAAAPwCAAAAA/sAAAAQAFoAb"
 "wBvAG0AQQByAGUAYQAAAAAA/////wAAAF4A////+wAAABQAUwBhAHYAZQBkAFYAaQBlAHcAcwAAAA"
 "AA/////wAAAGgA////+wAAAAwAVAByAGEAYwBlAHMAAAAAAP////8AAABoAP///wAAAAMAAAAAAAA"
-"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAV4AAADj"
+"AAPwBAAAAAfsAAAAUAEQAYQB0AGEAVwBpAGQAZwBlAHQAAAAAAP////8AAABQAP///wAAAV4AAAD1"
 "AAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAOAFQAbwBvAGwAQgBhAHIBAAAAAP////8AA"
 "AAAAAAAAA=="
           SavedViews    "AAAAAgAAAAA="
@@ -1139,7 +1139,7 @@ Plecs {
           TimeRange     "0"
           ScrollingMode "1"
           SingleTimeAxis "1"
-          Open          "0"
+          Open          "1"
           Ts            "-1"
           SampleLimit   "0"
           XAxisLabel    "Time / s"
@@ -1579,18 +1579,25 @@ Plecs {
         }
         Connection {
           Type          Signal
-          SrcComponent  "wt"
-          SrcTerminal   1
-          Points        [195, 435; 195, 380]
-          DstComponent  "3ph->RRF1"
-          DstTerminal   3
-        }
-        Connection {
-          Type          Signal
           SrcComponent  "Uabc"
           SrcTerminal   1
           DstComponent  "3ph->RRF"
           DstTerminal   1
+        }
+        Connection {
+          Type          Signal
+          SrcComponent  "wt"
+          SrcTerminal   1
+          Points        [195, 435; 195, 380]
+          Branch {
+            DstComponent  "3ph->RRF1"
+            DstTerminal   3
+          }
+          Branch {
+            Points        [195, 250]
+            DstComponent  "3ph->RRF"
+            DstTerminal   3
+          }
         }
       }
     }
@@ -7820,7 +7827,7 @@ Plecs {
       Parameter {
         Variable      "Value"
         Value         "2*pi/3"
-        Show          off
+        Show          on
       }
       Parameter {
         Variable      "DataType"
@@ -9453,8 +9460,8 @@ Plecs {
       BrushAlpha   0
     } 
     Annotation {
-      Name          "<html><body>\n<p>Droop Control + Scope </p></body></html>"
-      Position      [120, 575]
+      Name          "<html><body>\n<p> Scopes </p></body></html>"
+      Position      [80, 575]
     } 
     RectangleAnnotation {
       Position     [1375, 700]
