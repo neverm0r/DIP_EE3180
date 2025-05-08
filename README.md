@@ -1,7 +1,7 @@
 # DIP_EE3180
 E022 | Project Title: **Design and Implementation of Grid-Forming Inverter System**
 
-This is a **partial release** of the work done on our 3 grid-forming inverter (GFMI) project, assigned to us and developed as part of a core module project at NTU EEE.
+This is a **partial release** of the work done on our 3-phase grid-forming inverter (GFMI) project, assigned to us and developed as part of a core module project at NTU EEE.
 
 
 > Due to academic and institutional confidentiality, most files (particularly: hardware + DSP source code), as well as the final report, will **not** be shared. 
@@ -31,9 +31,8 @@ This **9-person project** was largely split between 2 teams:
 
 Special thanks to the guidance of the PHD student attached to us, not only because but especially due to the high voltage nature of this project. 
 
-## Technical Details 
-A PLECS license is needed to run the simulations in PLECS. To overcome this, screenshots will be uploaded to the repository in the next few weeks. 
-
+## Technical Notes 
+A PLECS license is needed to run the simulations in PLECS.
 A MATLAB GUI can also be found in this repository. 
 
 ## Potential Future Work 
